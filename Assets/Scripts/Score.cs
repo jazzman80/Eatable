@@ -8,10 +8,11 @@ public class Score : MonoBehaviour
     int score;
 
     [SerializeField] TextMeshProUGUI scoreUI;
+    [SerializeField] Globals globals;
 
     public void AddScore()
     {
-        score += 10;
+        score += globals.starPrice;
 
         scoreUI.text = score.ToString();
     }
