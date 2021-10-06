@@ -8,4 +8,5 @@ public class Globals : ScriptableObject
 {
     public int starPrice;
     public int initHealth;
+    public float time;
 }

@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abaaca3e6ff45c146b5448d2d7958756, type: 3}
-  m_Name: Globals
+  m_Script: {fileID: 11500000, guid: 64153fa9daed9b64585126f31dab88aa, type: 3}
+  m_Name: Time Over
   m_EditorClassIdentifier: 
-  starPrice: 5
-  initHealth: 3
-  time: 5
