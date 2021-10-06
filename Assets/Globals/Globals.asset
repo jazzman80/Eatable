@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Globals
   m_EditorClassIdentifier: 
   starPrice: 5
+  initHealth: 5

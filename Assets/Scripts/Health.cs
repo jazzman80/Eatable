@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    int health = 3;
+    int health;
 
     [SerializeField] Heart heartPrefab;
     [SerializeField] Globals globals;
@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
+        health = globals.initHealth;
         GenerateHealthPanel();
     }
 
@@ -21,7 +22,7 @@ public class Health : MonoBehaviour
     {
         health--;
 
-
+        heartPool[health].Off();
     }
 
     private void GenerateHealthPanel()
