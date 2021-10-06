@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
     int score = 0;
 
     [SerializeField] TextMeshProUGUI scoreUI;
+    [SerializeField] TextMeshProUGUI gameOverScore;
     [SerializeField] Globals globals;
 
     public void AddScore()
@@ -20,5 +21,10 @@ public class Score : MonoBehaviour
     {
         score = 0;
         scoreUI.text = score.ToString();
+    }
+
+    public void ShowGameOverScore()
+    {
+        gameOverScore.text = "счёт: " + score.ToString();
     }
 }
