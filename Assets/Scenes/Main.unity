@@ -1018,6 +1018,7 @@ MonoBehaviour:
     type: 3}
   globals: {fileID: 11400000, guid: 28df71d5c12c01c46b7a8244344941f2, type: 2}
   healthPanel: {fileID: 2101856075}
+  gameOver: {fileID: 11400000, guid: ce3f50e8fc1d0524b81f22dfa32f3e33, type: 2}
 --- !u!4 &1978998437
 Transform:
   m_ObjectHideFlags: 0

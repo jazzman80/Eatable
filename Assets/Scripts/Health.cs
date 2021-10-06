@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     [SerializeField] Heart heartPrefab;
     [SerializeField] Globals globals;
     [SerializeField] Transform healthPanel;
+    [SerializeField] GameEvent gameOver;
 
     List<Heart> heartPool = new List<Heart>();
 
@@ -21,8 +22,8 @@ public class Health : MonoBehaviour
     public void ReduceHealth()
     {
         health--;
-
         heartPool[health].Off();
+        if (health == 0) gameOver.Raise();
     }
 
     private void GenerateHealthPanel()
