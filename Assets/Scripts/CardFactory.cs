@@ -13,6 +13,14 @@ public class CardFactory : MonoBehaviour
 
     public void GenerateCard()
     {
-        Instantiate(cardPrefab, this.transform);
+        Card newCard = Instantiate(cardPrefab, this.transform);
+        newCard.SetData(RandomCard());
+    }
+
+    private Card.Quality RandomCard()
+    {
+        int random = Random.Range(0, 2);
+
+        return (Card.Quality)random;
     }
 }
