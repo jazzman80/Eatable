@@ -19,6 +19,12 @@ public class Health : MonoBehaviour
         GenerateHealthPanel();
     }
 
+    public void HealthReset()
+    {
+        health = globals.initHealth;
+        foreach (Heart heart in heartPool) heart.On();
+    }
+
     public void ReduceHealth()
     {
         health--;

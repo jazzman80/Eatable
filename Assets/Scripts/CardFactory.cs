@@ -6,6 +6,8 @@ public class CardFactory : MonoBehaviour
 {
     [SerializeField] Card cardPrefab;
 
+    bool active = true;
+
     private void Start()
     {
         GenerateCard();
@@ -13,8 +15,11 @@ public class CardFactory : MonoBehaviour
 
     public void GenerateCard()
     {
-        Card newCard = Instantiate(cardPrefab, this.transform);
-        newCard.SetData(RandomCard());
+        if (active)
+        {
+            Card newCard = Instantiate(cardPrefab, this.transform);
+            newCard.SetData(RandomCard());
+        }
     }
 
     private Card.Quality RandomCard()
@@ -23,4 +28,15 @@ public class CardFactory : MonoBehaviour
 
         return (Card.Quality)random;
     }
+
+    public void Activate()
+    {
+        active = true;
+    }
+
+    public void Deactivate()
+    {
+        active = false;
+    }
+
 }

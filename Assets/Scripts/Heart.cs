@@ -10,4 +10,9 @@ public class Heart : MonoBehaviour
     {
         heart.SetActive(false);
     }
+
+    public void On()
+    {
+        heart.SetActive(true);
+    }
 }

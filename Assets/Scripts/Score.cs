@@ -5,7 +5,7 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    int score;
+    int score = 0;
 
     [SerializeField] TextMeshProUGUI scoreUI;
     [SerializeField] Globals globals;
@@ -13,7 +13,12 @@ public class Score : MonoBehaviour
     public void AddScore()
     {
         score += globals.starPrice;
+        scoreUI.text = score.ToString();
+    }
 
+    public void ResetScore()
+    {
+        score = 0;
         scoreUI.text = score.ToString();
     }
 }
