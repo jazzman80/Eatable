@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2039054392878251539}
+  cardDestroy: {fileID: 11400000, guid: 3cfb1fbf8873ba447b8c6cbf92d2b13f, type: 2}
 --- !u!95 &2039054392878251539
 Animator:
   serializedVersion: 3

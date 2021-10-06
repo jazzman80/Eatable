@@ -6,6 +6,11 @@ public class CardFactory : MonoBehaviour
 {
     [SerializeField] Card cardPrefab;
 
+    private void Start()
+    {
+        GenerateCard();
+    }
+
     public void GenerateCard()
     {
         Instantiate(cardPrefab, this.transform);

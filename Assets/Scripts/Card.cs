@@ -5,6 +5,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     [SerializeField] Animator animator;
+    [SerializeField] GameEvent cardDestroy;
 
     public void OnSwipeLeft()
     {
@@ -18,6 +19,7 @@ public class Card : MonoBehaviour
 
     public void CardDestroy()
     {
+        cardDestroy.Raise();
         Destroy(gameObject);
     }
 }
