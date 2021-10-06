@@ -7,14 +7,29 @@ public class Card : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] GameEvent cardDestroy;
 
+    bool active = false;
+
     public void OnSwipeLeft()
     {
-        animator.Play("Swipe Left");
+        if (active)
+        {
+            active = false;
+            animator.Play("Swipe Left");
+        }
     }
 
     public void OnSwipeRight()
     {
-        animator.Play("Swipe Right");
+        if (active)
+        {
+            active = false;
+            animator.Play("Swipe Right");
+        }
+    }
+
+    public void Activate()
+    {
+        active = true;
     }
 
     public void CardDestroy()
