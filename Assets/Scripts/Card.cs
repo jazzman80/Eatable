@@ -15,4 +15,9 @@ public class Card : MonoBehaviour
     {
         animator.Play("Swipe Right");
     }
+
+    public void CardDestroy()
+    {
+        Destroy(gameObject);
+    }
 }
