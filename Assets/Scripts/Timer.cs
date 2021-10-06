@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
     [SerializeField] Globals globals;
     [SerializeField] GameEvent timeOver;
     [SerializeField] Animator animator;
+    [SerializeField] GameObject timerUI;
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class Timer : MonoBehaviour
     public void StopTimer()
     {
         StopAllCoroutines();
+        timerUI.SetActive(false);
     }
 
     private IEnumerator CardTime()
@@ -31,4 +33,10 @@ public class Timer : MonoBehaviour
         yield return new WaitForSeconds(globals.time);
         timeOver.Raise();
     }
+
+    public void ActivateUI()
+    {
+        timerUI.SetActive(true);
+    }
+
 }
