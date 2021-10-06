@@ -277,6 +277,8 @@ MonoBehaviour:
   animator: {fileID: 2039054392878251539}
   cardDestroy: {fileID: 11400000, guid: 3cfb1fbf8873ba447b8c6cbf92d2b13f, type: 2}
   caption: {fileID: 7485382986092470950}
+  guessedRight: {fileID: 11400000, guid: 497df5bdb29a5594ea014a64d99f15ce, type: 2}
+  guessedWrong: {fileID: 11400000, guid: 911a3c76aa63dbc49851fabd6b8d208e, type: 2}
 --- !u!95 &2039054392878251539
 Animator:
   serializedVersion: 3

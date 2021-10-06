@@ -14,6 +14,8 @@ public class Card : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] GameEvent cardDestroy;
     [SerializeField] TextMeshPro caption;
+    [SerializeField] GameEvent guessedRight;
+    [SerializeField] GameEvent guessedWrong;
 
     bool active = false;
     Quality quality;
@@ -32,6 +34,9 @@ public class Card : MonoBehaviour
             active = false;
             animator.Play("Swipe Left");
         }
+
+        if (quality == Quality.uneatable) guessedRight.Raise();
+        else guessedWrong.Raise();
     }
 
     public void OnSwipeRight()
@@ -41,6 +46,9 @@ public class Card : MonoBehaviour
             active = false;
             animator.Play("Swipe Right");
         }
+
+        if (quality == Quality.eatable) guessedRight.Raise();
+        else guessedWrong.Raise();
     }
 
     public void Activate()
