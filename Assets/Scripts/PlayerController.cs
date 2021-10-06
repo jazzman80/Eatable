@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    [SerializeField] GameEvent swipeLeftEvent;
+    [SerializeField] GameEvent swipeRightEvent;
+    
     Vector2 dragStartPosition;
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -19,7 +22,7 @@ public class PlayerController : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (dragStartPosition.x >= eventData.position.x) Debug.Log("Swipe left");
-        else if (dragStartPosition.x < eventData.position.x) Debug.Log("Swipe right");
+        if (dragStartPosition.x >= eventData.position.x) swipeLeftEvent.Raise();
+        else if (dragStartPosition.x < eventData.position.x) swipeRightEvent.Raise();
     }
 }

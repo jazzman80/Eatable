@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] Animator animator;
+
+    public void OnSwipeLeft()
     {
-        
+        animator.Play("Swipe Left");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnSwipeRight()
     {
-        
+        animator.Play("Swipe Right");
     }
 }

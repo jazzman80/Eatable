@@ -398,6 +398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5de01e99ebf31f4b8fc5346ac232390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipeLeftEvent: {fileID: 11400000, guid: 4716b671e54c2b443925ca516d01c113, type: 2}
+  swipeRightEvent: {fileID: 11400000, guid: ea80b37fea41a9847abc3f2fc97e2983, type: 2}
 --- !u!114 &1701512598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +518,7 @@ PrefabInstance:
     - target: {fileID: 3538478848000615234, guid: 8339b10aeedc489469cedda3fde8b1d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7790952663249981806, guid: 8339b10aeedc489469cedda3fde8b1d7,
         type: 3}
