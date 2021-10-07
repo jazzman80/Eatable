@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Grape
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0412\u0438\u043D\u043E\u0433\u0440\u0430\u0434"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: cc9264e4eaa5e414ab960046ffa8a1ed
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

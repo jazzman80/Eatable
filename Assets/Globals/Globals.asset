@@ -15,3 +15,16 @@ MonoBehaviour:
   starPrice: 5
   initHealth: 3
   time: 5
+  stuff:
+  - {fileID: 11400000, guid: 5687b8b4a8470ab4b8a73aca40262dc9, type: 2}
+  - {fileID: 11400000, guid: 1bd14ab358e8cdf448dc06a136d0ec28, type: 2}
+  - {fileID: 11400000, guid: 912284e98bec02f4fb1a6b57e94ec1ee, type: 2}
+  - {fileID: 11400000, guid: 2bfd996fed332fd49a0c6070c6a4458f, type: 2}
+  - {fileID: 11400000, guid: 3cc3831e1b05b924c8544f0b1524407e, type: 2}
+  - {fileID: 11400000, guid: 8a88016aa787a6949ad6eedd4b67cc7e, type: 2}
+  - {fileID: 11400000, guid: e34959dd0b0a6a542a95b815f04a4fe4, type: 2}
+  - {fileID: 11400000, guid: b0a8ac809669f0b4bba816253c0d879b, type: 2}
+  - {fileID: 11400000, guid: f8f93fc8710dc4d468f7e6ef8f058c00, type: 2}
+  - {fileID: 11400000, guid: d723ecf38f07fdf44a28a4855ad5e96a, type: 2}
+  - {fileID: 11400000, guid: b0eca532318fbda4a850e0abec699b1f, type: 2}
+  - {fileID: 11400000, guid: 876e9f3f6bcdb1e49952f553c381d91f, type: 2}

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
-  m_Name: Raspberiies
+  m_Name: Raspberries
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u041C\u0430\u043B\u0438\u043D\u0430"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: ae694885429ce6e419f0e6e3ccba3830
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

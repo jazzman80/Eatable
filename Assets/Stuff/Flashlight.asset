@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Flashlight
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0424\u043E\u043D\u0430\u0440\u044C"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: 9eaccdb279895bc43b75599591079991
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  quality: 0
+  quality: 1

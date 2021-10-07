@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Rollers
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0420\u043E\u043B\u0438\u043A\u0438"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: 5fbafb3b46c114d47b775fe28b12a85b
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  quality: 0
+  quality: 1

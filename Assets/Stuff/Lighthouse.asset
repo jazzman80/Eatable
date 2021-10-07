@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Lighthouse
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u041C\u0430\u044F\u043A"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: b11d901d7e561ea4aa1616a8aec4f667
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  quality: 0
+  quality: 1

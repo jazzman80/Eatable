@@ -2,26 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Card : MonoBehaviour
 {
-    public enum Quality
-    {
-        eatable,
-        uneatable
-    }
-    
+    [SerializeField] TextMeshPro cardName;
+    [SerializeField] SpriteRenderer image;
     [SerializeField] Animator animator;
     [SerializeField] GameEvent cardDestroy;
     [SerializeField] GameEvent guessedRight;
     [SerializeField] GameEvent guessedWrong;
 
     bool active = false;
-    Quality quality;
+    Stuff.Quality quality;
 
-    public void SetData(Quality setQuality)
+    public void SetData(Stuff stuff)
     {
-        quality = setQuality;
+        quality = stuff.quality;
+        cardName.text = stuff.stuffName;
+        StartCoroutine(LoadImage(stuff.assetReference));
     }
 
     public void OnSwipeLeft()
@@ -32,7 +32,7 @@ public class Card : MonoBehaviour
             animator.Play("Swipe Left");
         }
 
-        if (quality == Quality.uneatable) guessedRight.Raise();
+        if (quality == Stuff.Quality.uneatable) guessedRight.Raise();
         else guessedWrong.Raise();
     }
 
@@ -44,7 +44,7 @@ public class Card : MonoBehaviour
             animator.Play("Swipe Right");
         }
 
-        if (quality == Quality.eatable) guessedRight.Raise();
+        if (quality == Stuff.Quality.eatable) guessedRight.Raise();
         else guessedWrong.Raise();
     }
 
@@ -57,5 +57,17 @@ public class Card : MonoBehaviour
     {
         cardDestroy.Raise();
         Destroy(gameObject);
+    }
+
+    private IEnumerator LoadImage(AssetReference loadSprite)
+    {
+        AsyncOperationHandle<Sprite> handle = loadSprite.LoadAssetAsync<Sprite>();
+        yield return handle;
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            Sprite sprite = handle.Result;
+            image.sprite = sprite;
+            Addressables.Release(handle);
+        }
     }
 }

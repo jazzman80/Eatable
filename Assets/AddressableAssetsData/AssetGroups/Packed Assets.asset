@@ -18,51 +18,51 @@ MonoBehaviour:
   m_GUID: 2b9251e955410c94dbbf5415b0ca0da9
   m_SerializeEntries:
   - m_GUID: a32c78ba4108cd241869239f8a980c25
-    m_Address: Assets/Art/Streaming/Eatable/Apricot.png
+    m_Address: Apricot
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 292d231a63e998c44b55044e359bceea
-    m_Address: Assets/Art/Streaming/Eatable/Cake.png
+    m_Address: Cake
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: cc9264e4eaa5e414ab960046ffa8a1ed
-    m_Address: Assets/Art/Streaming/Eatable/Grape.png
+    m_Address: Grape
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: bdf05c6bb5b9ada4abd5ffec103c987e
-    m_Address: Assets/Art/Streaming/Eatable/Melon.png
+    m_Address: Melon
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: ae694885429ce6e419f0e6e3ccba3830
-    m_Address: Assets/Art/Streaming/Eatable/Raspberries.png
+    m_Address: Raspberries
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: ab91c4c6d75c64c4a86dc240b603412f
-    m_Address: Assets/Art/Streaming/Eatable/Tomato.png
+    m_Address: Tomato
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: a9f52c199f8677a478aa5aea89c6b4a4
-    m_Address: Assets/Art/Streaming/Uneatable/Backpack.png
+    m_Address: Backpack
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: fd8276f496da0bb4d84e0b57aba0c1b3
-    m_Address: Assets/Art/Streaming/Uneatable/Ball.png
+    m_Address: Ball
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 9eaccdb279895bc43b75599591079991
-    m_Address: Assets/Art/Streaming/Uneatable/Flashlight.png
+    m_Address: Flashlight
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: b11d901d7e561ea4aa1616a8aec4f667
-    m_Address: Assets/Art/Streaming/Uneatable/Lighthouse.png
+    m_Address: Lighthouse
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 5fbafb3b46c114d47b775fe28b12a85b
-    m_Address: Assets/Art/Streaming/Uneatable/Rollers.png
+    m_Address: Rollers
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: f873a5dd5a1fab54e973f151dbb62417
-    m_Address: Assets/Art/Streaming/Uneatable/Telephone.png
+    m_Address: Telephone
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Tomato
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0422\u043E\u043C\u0430\u0442"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: ab91c4c6d75c64c4a86dc240b603412f
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

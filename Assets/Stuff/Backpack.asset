@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Backpack
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0420\u044E\u043A\u0437\u0430\u043A"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: a9f52c199f8677a478aa5aea89c6b4a4
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  quality: 0
+  quality: 1

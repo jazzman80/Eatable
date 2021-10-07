@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Ball
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u041C\u044F\u0447"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: fd8276f496da0bb4d84e0b57aba0c1b3
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  quality: 0
+  quality: 1

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Telephone
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0422\u0435\u043B\u0435\u0444\u043E\u043D"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: f873a5dd5a1fab54e973f151dbb62417
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  quality: 0
+  quality: 1

@@ -5,6 +5,7 @@ using UnityEngine;
 public class CardFactory : MonoBehaviour
 {
     [SerializeField] Card cardPrefab;
+    [SerializeField] Globals globals;
 
     bool active = true;
 
@@ -18,15 +19,15 @@ public class CardFactory : MonoBehaviour
         if (active)
         {
             Card newCard = Instantiate(cardPrefab, this.transform);
-            newCard.SetData(RandomCard());
+            newCard.SetData(RandomStuff());
         }
     }
 
-    private Card.Quality RandomCard()
+    private Stuff RandomStuff()
     {
-        int random = Random.Range(0, 2);
+        int random = Random.Range(0, globals.stuff.Length);
 
-        return (Card.Quality)random;
+        return globals.stuff[random];
     }
 
     public void Activate()

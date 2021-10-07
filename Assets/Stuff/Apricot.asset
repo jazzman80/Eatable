@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Apricot
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0410\u0431\u0440\u0438\u043A\u043E\u0441"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: a32c78ba4108cd241869239f8a980c25
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

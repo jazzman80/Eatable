@@ -1075,6 +1075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 1691021174669471520, guid: 8339b10aeedc489469cedda3fde8b1d7,
     type: 3}
+  globals: {fileID: 11400000, guid: 28df71d5c12c01c46b7a8244344941f2, type: 2}
 --- !u!4 &1139880497
 Transform:
   m_ObjectHideFlags: 0

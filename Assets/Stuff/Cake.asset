@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Cake
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0422\u043E\u0440\u0442"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: 292d231a63e998c44b55044e359bceea
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

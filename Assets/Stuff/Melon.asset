@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b184e7b1616b6b649aef238a160aae68, type: 3}
   m_Name: Melon
   m_EditorClassIdentifier: 
-  stuffName: 
+  stuffName: "\u0414\u044B\u043D\u044F"
   assetReference:
-    m_AssetGUID: 
+    m_AssetGUID: bdf05c6bb5b9ada4abd5ffec103c987e
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
