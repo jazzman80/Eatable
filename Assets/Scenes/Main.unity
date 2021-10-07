@@ -2369,6 +2369,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2018013966}
+        m_MethodName: ActivateUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2018013966}
         m_MethodName: StartTimer
         m_Mode: 1
         m_Arguments:
@@ -2421,6 +2432,7 @@ MonoBehaviour:
   globals: {fileID: 11400000, guid: 28df71d5c12c01c46b7a8244344941f2, type: 2}
   timeOver: {fileID: 11400000, guid: 76c2cef4d5c634b469a8622d49d79c3e, type: 2}
   animator: {fileID: 1048991221}
+  timerUI: {fileID: 271269803}
 --- !u!4 &2018013967
 Transform:
   m_ObjectHideFlags: 0
