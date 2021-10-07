@@ -13,7 +13,6 @@ public class Card : MonoBehaviour
     
     [SerializeField] Animator animator;
     [SerializeField] GameEvent cardDestroy;
-    [SerializeField] TextMeshPro caption;
     [SerializeField] GameEvent guessedRight;
     [SerializeField] GameEvent guessedWrong;
 
@@ -23,8 +22,6 @@ public class Card : MonoBehaviour
     public void SetData(Quality setQuality)
     {
         quality = setQuality;
-
-        caption.text = quality.ToString();
     }
 
     public void OnSwipeLeft()
