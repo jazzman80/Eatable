@@ -14,17 +14,21 @@ public class Score : MonoBehaviour
     public void AddScore()
     {
         score += globals.starPrice;
-        scoreUI.text = score.ToString();
     }
 
     public void ResetScore()
     {
         score = 0;
-        scoreUI.text = score.ToString();
+        UpdateScore();
     }
 
     public void ShowGameOverScore()
     {
         gameOverScore.text = "счёт: " + score.ToString();
+    }
+
+    public void UpdateScore()
+    {
+        scoreUI.text = score.ToString();
     }
 }
