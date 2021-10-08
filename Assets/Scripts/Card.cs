@@ -59,6 +59,11 @@ public class Card : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void OnGameOver()
+    {
+        animator.Play("Swipe Right");
+    }
+
     private IEnumerator LoadImage(AssetReference loadSprite)
     {
         AsyncOperationHandle<Sprite> handle = loadSprite.LoadAssetAsync<Sprite>();

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7302565095874342283}
   - component: {fileID: 1134111550625280817}
   - component: {fileID: 2505236450579175769}
+  - component: {fileID: 6188478737976539851}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -197,6 +198,33 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1691021174669471520}
         m_MethodName: CardDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6188478737976539851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538478848000615234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79637346616ced6438e50eb79a93a0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: ce3f50e8fc1d0524b81f22dfa32f3e33, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1691021174669471520}
+        m_MethodName: OnGameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

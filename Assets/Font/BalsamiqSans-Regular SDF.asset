@@ -5529,7 +5529,7 @@ MonoBehaviour:
     atlasWidth: 1024
     atlasHeight: 1024
     characterSetSelectionMode: 6
-    characterSequence: 0400-04FF,30-39
+    characterSequence: 0400-04FF,30-39,2381
     referencedFontAssetGUID: 
     referencedTextAssetGUID: 
     fontStyle: 0
