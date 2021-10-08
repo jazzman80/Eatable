@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayAnimation : MonoBehaviour
 {
+    //Вспомогательная утилита для проигрывания анимации с начала клипа
+    
     [SerializeField] Animator animator;
     [SerializeField] string animationName;
 

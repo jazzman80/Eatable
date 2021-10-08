@@ -7,6 +7,8 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Card : MonoBehaviour
 {
+    //Класс карточки
+    
     [SerializeField] TextMeshPro cardName;
     [SerializeField] SpriteRenderer image;
     [SerializeField] Animator animator;
@@ -15,8 +17,11 @@ public class Card : MonoBehaviour
     [SerializeField] GameEvent guessedWrong;
 
     bool active = false;
+
+    //Вид карточки - съедобное или несъедобное
     Stuff.Quality quality;
 
+    //Установка данных, переданных фабрикой
     public void SetData(Stuff stuff)
     {
         quality = stuff.quality;
@@ -24,6 +29,7 @@ public class Card : MonoBehaviour
         StartCoroutine(LoadImage(stuff.assetReference));
     }
 
+    //При смахивании влево
     public void OnSwipeLeft()
     {
         if (active)
@@ -32,6 +38,7 @@ public class Card : MonoBehaviour
             animator.Play("Swipe Left");
         }
 
+        //Запуск события в зависимости от правльного или неправильного ответа
         if (quality == Stuff.Quality.uneatable) guessedRight.Raise();
         else guessedWrong.Raise();
     }
@@ -44,26 +51,31 @@ public class Card : MonoBehaviour
             animator.Play("Swipe Right");
         }
 
+        //Запуск события в зависимости от правльного или неправильного ответа
         if (quality == Stuff.Quality.eatable) guessedRight.Raise();
         else guessedWrong.Raise();
     }
 
+    //Активация карточки после окончания анимаций
     public void Activate()
     {
         active = true;
     }
 
+    //Уничтожение карточки после окончания анимации, запуск события для генерации новой карточки
     public void CardDestroy()
     {
         cardDestroy.Raise();
         Destroy(gameObject);
     }
 
+    //Если игра окончилась по таймеру, необходимо убрать карточку
     public void OnGameOver()
     {
         animator.Play("Swipe Right");
     }
 
+    //Загрузка необходимой картинки из Addressable asset
     private IEnumerator LoadImage(AssetReference loadSprite)
     {
         AsyncOperationHandle<Sprite> handle = loadSprite.LoadAssetAsync<Sprite>();

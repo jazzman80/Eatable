@@ -7,8 +7,15 @@ using UnityEngine.AddressableAssets;
 
 public class Stuff : ScriptableObject
 {
+    //Класс предметов, размещаемых на карточках
+    
+    //Название
     public string stuffName;
+
+    //Ссылка на картинку в Addressable asset
     public AssetReference assetReference;
+
+    //Съедобное или несъедобное 
     public Quality quality;
 
     public enum Quality
